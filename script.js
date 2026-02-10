@@ -10,12 +10,8 @@ sharp troubleshooting, technical coaching, and ensuring data quality across plat
 
     const textElement = document.getElementById('about-text');
     
+    
     // Inject the text
-    textElement.textContent = aboutMeDescription;
+    textElement.textContent = aboutMeDescription;   
 
-    // Small interaction: Log a message when the portfolio button is clicked
-    const portfolioBtn = document.querySelector('.btn');
-    portfolioBtn.addEventListener('click', () => {
-        console.log("Redirecting to portfolio...");
-    });
 });

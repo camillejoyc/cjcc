@@ -1,0 +1,113 @@
+/* Ensure the page takes up the full browser window */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    min-height: 100vh;
+    margin: 0;
+
+    /* UNIFIED BACKGROUND: This adds a dark tint over your image */
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+        url('profilebg.png'); 
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.profile-container {
+    /* 0.7 Alpha for a bit more "solid" feel to help text pop */
+    background-color: rgba(255, 255, 255, 0.7) !important; 
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    width: 90%;
+    max-width: 750px;
+    padding: 50px;
+    border-radius: 20px;
+    /* Darker border to define the edges against a light background */
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    
+    animation: slideUpFade 1.5s ease-out forwards;
+}
+
+/* --- TEXT COLORS CHANGED TO DARK FOR READABILITY --- */
+
+.name {
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+    color: #1a1a1a; /* Deep black/gray */
+}
+
+.career-position {
+    font-size: 18px;
+    color: #333333; /* Dark gray */
+    margin: 5px 0;
+    font-weight: 600;
+}
+
+.header-line {
+    border: none;
+    height: 8px;
+    background-color: #1a1a1a; /* Dark bar */
+    margin: 20px 0 30px 0;
+}
+
+.section-title {
+    font-size: 14px;
+    font-weight: 900;
+    color: #000000; /* Pure black */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.skills-list li {
+    font-size: 14px;
+    color: #222222; /* High contrast gray */
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.certifications-section {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1); /* Darker separator */
+    text-align: center;
+}
+
+.cert-text {
+    font-size: 13px;
+    color: #444444; /* Readable gray */
+    font-style: italic;
+    font-weight: 500;
+}
+
+@keyframes slideUpFade {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Back button to return to home */
+.back-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px 20px;
+    border-radius: 30px;
+}
