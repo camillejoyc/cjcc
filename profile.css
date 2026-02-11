@@ -24,8 +24,8 @@ body {
     background-repeat: no-repeat;
 }
 .profile-container {
-    /* 0.7 Alpha for a bit more "solid" feel to help text pop */
-    background-color: rgba(255, 255, 255, 0.7) !important; 
+    /* 0.85 Alpha for a bit more "solid" feel to help text pop */
+    background-color: rgba(255, 255, 255, 0.85); !important; 
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
 
