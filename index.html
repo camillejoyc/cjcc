@@ -28,11 +28,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p class="title">Technical Analytics & Administrative Specialist</p>
             
             <a href="profile-overview.html" id="profileBtn" class="btn">PROFILE OVERVIEW</a>
-            <a href="portfolio.html" id="portbtn" class="btnPO"
-onnclick="dataLayer.push({
-  event: 'btn_seeportfolio',
-  text_name: 'See Portfolio'
-});">SEE PORTFOLIO</a>
+      
+<a href="#"
+   id="portbtn"
+   class="btnPO"
+   onclick="dataLayer.push({
+     event: 'btn_seeportfolio',
+     text_name: 'See Portfolio'
+   });
+   setTimeout(function(){
+     window.location.href='portfolio.html';
+   }, 300);
+   return false;">
+   SEE PORTFOLIO
+</a>
+
 
             
             <div class="socials">
